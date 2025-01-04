@@ -15,6 +15,10 @@ jobs:
     - uses: azure/login@v1
       with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+          container_name: '$web'
+          blob_name: 'index.html'
+          path: 'C:\Users\Can\Desktop\azure-resume\front-end'
+          overwrite: true  
 
     - name: Upload to blob storage
       uses: azure/CLI@v1
