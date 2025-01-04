@@ -1,0 +1,155 @@
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+#container {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#inline{
+    display: inline-block;
+}
+#header {
+    width: 100%;
+    border-bottom: 4px solid #38ACEC;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-header h1 {
+    font-size: 32px;
+    margin: 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
+    color: #2c3e50;
+}
+
+
+.left-header p {
+    font-size: 18px;
+    margin: 5px 0 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
+    color:black;
+}
+
+.right-header a {
+    display: inline;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 2px;
+    padding: 2px; 
+    line-height: normal; 
+}
+
+.right-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 5px; 
+}
+
+
+
+.right-header a:hover {
+    color: #7f8c8d;
+}
+
+
+h2, h3 {
+    padding: 15px 0;
+    margin: 0;
+    
+    font-style: italic;
+}
+h2{
+    color: #38ACEC;
+}
+
+p, li {
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+.wex {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.date {
+    font-size: 14px; 
+    color: #7f8c8d; 
+    margin-top: -10px;
+    margin-bottom: 10px; 
+    font-style: italic;
+    display: block; 
+}
+
+.intern ul {
+    list-style: none;
+    padding: 0;
+}
+
+.intern li {
+    background: #f8f8f8;
+    margin: 8px 0;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.education-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.education, .projects {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects li {
+    background-color: #f8f8f8;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills li {
+    background: #f0f4f8;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
