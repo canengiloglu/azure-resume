@@ -1,6 +1,5 @@
-
 body {
-    background-color: black;
+    background-color: #f4f4f4; /* Beyaz/soft gri tonlarında arka plan */
     margin: 0;
     font-family: 'Roboto', Arial, sans-serif;
     color: #333;
@@ -13,16 +12,18 @@ body {
     max-width: 800px;
     background-color: white;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Daha derin ve modern bir kutu gölgesi */
+    border-radius: 12px; /* Yuvarlatılmış köşeler */
 }
 
-#inline{
+
+#inline {
     display: inline-block;
 }
+
 #header {
     width: 100%;
-    border-bottom: 4px solid #38ACEC;
+    border-bottom: 4px solid #38ACEC; /* Ana renk */
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
@@ -32,50 +33,38 @@ body {
 .left-header h1 {
     font-size: 32px;
     margin: 0;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     color: #2c3e50;
 }
-
 
 .left-header p {
     font-size: 18px;
     margin: 5px 0 0;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
-    color:black;
+    color: #333;
 }
 
 .right-header a {
     display: inline;
-    color: black;
+    color: #333;
     text-decoration: none;
     font-size: 14px;
     transition: transform 0.3s ease, color 0.3s ease;
     margin: 2px;
-    padding: 2px; 
-    line-height: normal; 
+    padding: 2px;
+    line-height: normal;
 }
-
-.right-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    gap: 5px; 
-}
-
-
 
 .right-header a:hover {
-    color: #7f8c8d;
+    color: #007bff; /* Butonların veya bağlantıların daha belirgin hale gelmesi */
 }
-
 
 h2, h3 {
     padding: 15px 0;
     margin: 0;
-    
     font-style: italic;
 }
-h2{
+
+h2 {
     color: #38ACEC;
 }
 
@@ -84,30 +73,30 @@ p, li {
     line-height: 1.5;
 }
 
-
 .wex {
     width: 100%;
     margin-bottom: 20px;
+    
 }
+
 .date {
-    font-size: 14px; 
-    color: #7f8c8d; 
-    margin-top: -10px;
-    margin-bottom: 10px; 
+    font-size: 14px;
+    color: #7f8c8d;
+    padding: 5;
     font-style: italic;
-    display: block; 
+    display: block;
 }
 
-.intern ul {
-    list-style: none;
-    padding: 0;
+.experience ul {
+    
+    padding: 5;
 }
 
-.intern li {
-    background: #f8f8f8;
-    margin: 8px 0;
-    padding: 4px 8px;
-    border-radius: 5px;
+.experience li {
+    
+    margin: 6px 0;
+    padding: 3px 6px;
+    border-radius: 8px;
     font-size: 16px;
 }
 
@@ -118,7 +107,11 @@ p, li {
 }
 
 .education, .projects {
-    width: 48%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.certificates{
+    width:100%;
     margin-bottom: 20px;
 }
 
@@ -128,12 +121,11 @@ p, li {
 }
 
 .projects li {
-    background-color: #f8f8f8;
+    background-color: #f0f4f8;
     padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 14px;
 }
-
 
 .skills {
     margin-top: 20px;
@@ -148,8 +140,49 @@ p, li {
 }
 
 .skills li {
-    background: #f0f4f8;
+    background: #e0e4f8; /* Daha yumuşak bir arka plan */
     padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 14px;
 }
+#languages {
+    margin-top: 20px;
+}
+
+#languages h2 {
+    color: #38ACEC;
+}
+
+#languages ul {
+    list-style: none;
+    padding: 0;
+}
+
+#languages li {
+    background-color: #f0f4f8;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.projects {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.projects button {
+    display: inline-block;
+    background-color: #38ACEC;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.projects button:hover {
+    background-color: #007bff;
+}
+
